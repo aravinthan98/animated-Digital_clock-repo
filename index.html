@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+    <div class="main-container">
+        <h2>Digital Clock</h2>
+        <div class="timezone">
+            <button id="zone12">12</button>
+            <button id="zone24">24</button>
+        </div>
+   
+    <div class="clock-container">
+        <div class="card" style="--clr:#ff2972;">
+            <svg>
+                <circle cx="70" cy="70" r="70"></circle>
+                <circle cx="70" cy="70" r="70" id="hh"></circle>
+            </svg>
+            <div id="hour" >00</div>
+            <!-- <span="timename">hour</span> -->
+        </div>
+        <div class="card" style="--clr:#fbff29;">
+            <svg>
+                <circle cx="70" cy="70" r="70"></circle>
+                <circle cx="70" cy="70" r="70" id="mm"></circle>
+            </svg>
+            <div id="minute" >00</div>
+            <!-- <p class="timename">minute</p> -->
+        </div>
+        <div class="card" style="--clr:#08ec13;">
+            <svg>
+                <circle cx="70" cy="70" r="70"></circle>
+                <circle cx="70" cy="70" r="70" id="ss"></circle>
+            </svg>
+            <div id="second" >00</div>
+            <!-- <p class="timename">seconds</p> -->
+        </div>
+        <div class="type">
+            <div class="timeformat" id="ampm">am</div>
+        </div>
+
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

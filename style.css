@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    /* background-image: url("https://images.ctfassets.net/hrltx12pl8hq/5KiKmVEsCQPMNrbOE6w0Ot/341c573752bf35cb969e21fcd279d3f9/hero-img_copy.jpg?fit=fill&w=1200&h=630");
+    background-repeat: no-repeat;
+    background-size: cover; */
+    /* display: flex;
+
+    align-items: center;
+    justify-content: center; */
+    min-height: 100vh;
+
+ background: #2f363e;
+ 
+}
+.main-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10%;
+   
+}
+.clock-container{
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+   gap: 40px;
+   color: #fff;
+}
+h2{
+   text-align: center;
+   margin-right: 3%;
+   color: gold;
+}
+.clock-container .card{
+    position: relative;
+    width: 150px;
+    height: 150px;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.clock-container div{
+    position: absolute;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.5em;
+}
+.clock-container .type{
+    position: relative;
+    font-size: 1em;
+    transform: translateX(-20px); 
+}
+.clock-container .card svg{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    transform: rotate(270deg);
+}
+.clock-container .card svg circle{
+    width: 100%;
+    height: 100%;
+    fill: transparent;
+    stroke: #191919;
+    stroke-width: 4px;
+    transform: translate(5px,5px);
+}
+.clock-container .card svg circle:nth-child(2){
+    stroke:var(--clr);
+    stroke-dasharray: 440;
+}
+.clock-container div span{
+    position: absolute;
+    font-size: 0.35em;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    color: lightsteelblue;
+    text-transform: uppercase;
+    margin-top: 20px;
+    transform: translateX(-50%) translateY(-10px);
+}
+
+
+.timezone{
+    margin-right: 3%;
+   margin-top: 35px;
+   margin-bottom: 35px;
+}
+
+.timezone button{
+    padding: 10px 15px;
+    background-color:lightcoral;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.timezone button:hover{
+    transform:scale(1.1) ;
+}
+#ampm{
+    display: none;
+}
